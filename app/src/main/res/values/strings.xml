@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">LADM_U3_Practica1_OsunaMadrigalBiancaGpe</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ASIGNACION EQUIPO COMPUTO</string>
+    <string name="nav_header_subtitle">Bianca Gpe. Osuna Madrigal</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Equipos</string>
+    <string name="menu_gallery">Registrar</string>
+    <string name="menu_slideshow">Asignaciones</string>
+
+    <array name="item_registrar">
+        <item>Equipo de computo</item>
+        <item>Asignación de equipo</item>
+    </array>
+
+    <array name="item_tipo">
+        <item>Computadora</item>
+        <item>Tableta</item>
+        <item>Impresora</item>
+        <item>Proyector</item>
+    </array>
+
+    <array name="item_marca">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Huawei</item>
+    </array>
+
+    <array name="item_imprime_con">
+        <item>Toner</item>
+        <item>Tinta</item>
+    </array>
+
+    <array name="item_entrada">
+        <item>HDMI</item>
+        <item>DVI</item>
+        <item>VGA</item>
+    </array>
+
+    <array name="item_area">
+        <item>Ventas</item>
+        <item>Finanzas</item>
+        <item>Producción</item>
+        <item>Recursos Humanos</item>
+    </array>
+</resources>

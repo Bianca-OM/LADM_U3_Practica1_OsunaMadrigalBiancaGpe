@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Qué va a registrar?"
+        android:textSize="18dp"/>
+
+    <Spinner
+        android:id="@+id/spnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/item_registrar"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo de barras"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTipo"
+        android:text="Tipo de equipo:"
+        android:visibility="visible"/>
+
+    <Spinner
+        android:id="@+id/spnTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/item_tipo"
+        android:minHeight="48dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtProcesador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Procesador"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/txtRam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="RAM"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/txtDisco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disco duro"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMarca"
+        android:text="Marca:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnMarca"
+        android:entries="@array/item_marca"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblImprime"
+        android:text="Imprime con:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnImprime"
+        android:entries="@array/item_imprime_con"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblEntrada"
+        android:text="Tipo de entrada:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnEntrada"
+        android:entries="@array/item_entrada"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/txtFechaC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de compra"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNombre"
+        android:hint="Nombre de empleado"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblArea"
+        android:text="Area:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnArea"
+        android:entries="@array/item_area"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFechaA"
+        android:hint="Fecha de asignación"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTipoA"
+        android:text="Tipo de equipo:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnTipoA"
+        android:entries="@array/item_tipo"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDisponible"
+        android:text="Equipos disponibles (códigos):"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnCodigo"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegistrar"
+        android:text="REGISTRAR"/>
+
+</LinearLayout>

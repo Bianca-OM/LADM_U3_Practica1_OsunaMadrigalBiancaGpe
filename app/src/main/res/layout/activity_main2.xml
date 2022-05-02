@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCodigo"
+        android:text="Código de barras"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTipo"
+        android:text="Tipo de equipo:"/>
+
+    <Spinner
+        android:id="@+id/spnTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/item_tipo"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/txtProcesador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Procesador"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/txtRam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="RAM"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/txtDisco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disco duro"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMarca"
+        android:text="Marca:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnMarca"
+        android:entries="@array/item_marca"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblImprime"
+        android:text="Imprime con:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnImprime"
+        android:entries="@array/item_imprime_con"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblEntrada"
+        android:text="Tipo de entrada:"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnEntrada"
+        android:entries="@array/item_entrada"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/txtFechaC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de compra"
+        android:minHeight="48dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnActualizar"
+        android:text="ACTUALIZAR"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelar"
+        android:text="CANCELAR"/>
+
+</LinearLayout>
